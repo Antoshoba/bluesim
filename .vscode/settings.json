@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  },
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.configPath": ".prettierrc.json",
+  "editor.detectIndentation": false,
+  "files.watcherExclude": {
+    "**/dist/**": true
+  },
+  "search.exclude": {
+    "**/dist": true
+  }
+}

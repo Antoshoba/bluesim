@@ -1,0 +1,27 @@
+{
+  "name": "@j2w/shared-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^2.16.0",
+    "@j2w/common": "1.0.0",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
+    "@mui/system": "^5.11.5",
+    "@mui/x-data-grid": "^5.17.19",
+    "@mui/x-date-pickers": "^5.0.14",
+    "axios": "1.2.3",
+    "date-fns": "^2.29.3",
+    "js-cookie": "^3.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-router-dom": "^6.7.0",
+    "react-toastify": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10"
+  }
+}

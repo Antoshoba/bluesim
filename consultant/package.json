@@ -1,0 +1,62 @@
+{
+  "name": "@j2w/consultant",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@j2w/common": "1.0.0",
+    "@j2w/shared-frontend": "1.0.0",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
+    "@reduxjs/toolkit": "^1.9.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.7.0",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.2",
+    "sass": "^1.57.1",
+    "web-vitals": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-redux": "^7.1.25",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "react-app-rewired": "^2.2.1",
+    "react-scripts": "5.0.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "aws:push": "echo \"Pushing to Bucket: \"$AWS_BUCKET_NAME && aws s3 sync build/ $AWS_BUCKET_NAME",
+    "aws:cache-purge": "aws cloudfront create-invalidation --distribution-id $AWS_DISTRIBUTION_ID --paths '/*'",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "eject": "react-app-rewired eject",
+    "start:dev": "env-cmd -e local-dev yarn start",
+    "build-release": "cross-env-shell yarn run build && yarn run aws:push && yarn run aws:cache-purge",
+    "release:dev": "env-cmd -e dev yarn build-release",
+    "release": "env-cmd -e prod yarn build-release"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

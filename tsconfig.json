@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@j2w/api/*": ["api/src/*"],
+      "@j2w/common/*": ["common/src/*"],
+      "@j2w/consultant/*": ["consultant/src/*"],
+      "@j2w/hrbp/*": ["hrbp/src/*"],
+      "@j2w/shared-frontend/*": ["shared-frontend/src/*"],
+      "@j2w/bluesim/*": ["bluesim/src/*"],
+    }
+  }
+}

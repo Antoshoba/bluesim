@@ -1,0 +1,68 @@
+{
+  "name": "j2w-engagement-tool",
+  "version": "1.0.0",
+  "description": "JoulesToWatts Engagement Tool",
+  "main": "index.js",
+  "repository": "https://github.com/Antoshoba/bluesim.git",
+  "author": "Tamilarasu S <tamilarasuiit@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "packageManager": "yarn@3.3.0",
+  "workspaces": {
+    "packages": [
+      "api",
+      "common",
+      "consultant",
+      "hrbp",
+      "shared-frontend"
+    ]
+  },
+  "dependencies": {
+    "class-transformer": "0.5.1",
+    "class-validator": "0.14.0",
+    "react": "18.2.0",
+    "react-scripts": "^5.0.1",
+    "validator": "13.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/validator": "13.7.10",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "latest",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "latest",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "yarn lint-staged",
+    "start:consultant": "cd consultant && yarn start",
+    "start:hrbp": "cd hrbp && yarn start",
+    "start:api": "cd api && yarn start",
+    "start:consultant-dev": "cd consultant && yarn start:dev",
+    "release:consultant-dev": "cd consultant && yarn release:dev",
+    "release:consultant-prod": "cd consultant && yarn release",
+    "start:hrbp-dev": "cd hrbp && yarn start:dev",
+    "release:hrbp-dev": "cd hrbp && yarn release:dev",
+    "release:hrbp-prod": "cd hrbp && yarn release",
+    "release:api": "cd api && yarn release"
+  },
+  "importSort": {
+    ".ts, .tsx": {
+      "parser": "typescript",
+      "style": "eslint",
+      "options": {}
+    }
+  }
+}
