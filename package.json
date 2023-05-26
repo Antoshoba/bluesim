@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Antoshoba.github.io/bluesim",
   "name": "j2w-engagement-tool",
   "version": "1.0.0",
   "description": "JoulesToWatts Engagement Tool",
@@ -23,6 +24,7 @@
     "class-transformer": "0.5.1",
     "class-validator": "0.14.0",
     "dayjs": "^1.11.7",
+    "gh-pages": "^5.0.0",
     "react": "18.2.0",
     "react-apexcharts": "^1.4.0",
     "react-chartjs-2": "^5.2.0",
@@ -61,7 +63,9 @@
     "start:hrbp-dev": "cd hrbp && yarn start:dev",
     "release:hrbp-dev": "cd hrbp && yarn release:dev",
     "release:hrbp-prod": "cd hrbp && yarn release",
-    "release:api": "cd api && yarn release"
+    "release:api": "cd api && yarn release",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "importSort": {
     ".ts, .tsx": {
