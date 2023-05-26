@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e710c76.css",
-    "main.js": "/static/js/main.8a05db50.js",
-    "static/js/478.3a7468a5.chunk.js": "/static/js/478.3a7468a5.chunk.js",
-    "static/media/avatar.svg": "/static/media/avatar.0f88f827c092c3ad67a7cea62910fe13.svg",
-    "static/media/Login.png": "/static/media/Login.20363c957d786838c94a.png",
-    "static/media/Background.png": "/static/media/Background.a1bf450889faa92508c1.png",
-    "static/media/bluSimLogo.svg": "/static/media/bluSimLogo.fef2acad2db11c48b0e7bb4afd17255a.svg",
-    "static/media/residents.svg": "/static/media/residents.2a69b7047e075ac640d515db706bfc9c.svg",
-    "static/media/dashboard.svg": "/static/media/dashboard.d9f29509fb31bf65435d3593c2a3a810.svg",
-    "static/media/footer2.svg": "/static/media/footer2.b17ba392c7c8cea4137fd5e6db8da44d.svg",
-    "static/media/nurse.svg": "/static/media/nurse.d2c8240736201618086c6abd677324f2.svg",
-    "index.html": "/index.html",
-    "static/media/footer3.svg": "/static/media/footer3.b986275bbfaaea930728f05bb298907e.svg",
-    "main.8e710c76.css.map": "/static/css/main.8e710c76.css.map",
-    "main.8a05db50.js.map": "/static/js/main.8a05db50.js.map",
-    "478.3a7468a5.chunk.js.map": "/static/js/478.3a7468a5.chunk.js.map"
+    "main.css": "/bluesim/static/css/main.8e710c76.css",
+    "main.js": "/bluesim/static/js/main.d2024fa9.js",
+    "static/js/478.3a7468a5.chunk.js": "/bluesim/static/js/478.3a7468a5.chunk.js",
+    "static/media/avatar.svg": "/bluesim/static/media/avatar.0f88f827c092c3ad67a7cea62910fe13.svg",
+    "static/media/Login.png": "/bluesim/static/media/Login.20363c957d786838c94a.png",
+    "static/media/Background.png": "/bluesim/static/media/Background.a1bf450889faa92508c1.png",
+    "static/media/bluSimLogo.svg": "/bluesim/static/media/bluSimLogo.fef2acad2db11c48b0e7bb4afd17255a.svg",
+    "static/media/residents.svg": "/bluesim/static/media/residents.2a69b7047e075ac640d515db706bfc9c.svg",
+    "static/media/dashboard.svg": "/bluesim/static/media/dashboard.d9f29509fb31bf65435d3593c2a3a810.svg",
+    "static/media/footer2.svg": "/bluesim/static/media/footer2.b17ba392c7c8cea4137fd5e6db8da44d.svg",
+    "static/media/nurse.svg": "/bluesim/static/media/nurse.d2c8240736201618086c6abd677324f2.svg",
+    "index.html": "/bluesim/index.html",
+    "static/media/footer3.svg": "/bluesim/static/media/footer3.b986275bbfaaea930728f05bb298907e.svg",
+    "main.8e710c76.css.map": "/bluesim/static/css/main.8e710c76.css.map",
+    "main.d2024fa9.js.map": "/bluesim/static/js/main.d2024fa9.js.map",
+    "478.3a7468a5.chunk.js.map": "/bluesim/static/js/478.3a7468a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e710c76.css",
-    "static/js/main.8a05db50.js"
+    "static/js/main.d2024fa9.js"
   ]
 }
